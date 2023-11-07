@@ -1,0 +1,21 @@
+{
+	"HTML pradinės komandos": {
+		"prefix": "Mano_snippet",
+		"body": [
+			"<!-- Laurynas Šeškus, Ef-22/1 -->",
+			"<!DOCTYPE html>",
+			"",
+			"<html>",
+			"	<head>",
+			"		<title></title>",
+			"		<meta charset='UTF-8'>",
+			"		<meta name='Laurynas Šeškus'>",
+			"		<link>"
+			"	</head>",
+			"	<body>",
+			"	</body>",
+			"</html>"
+		],
+		"description": "Parašo pradines komandas"
+	}
+}
