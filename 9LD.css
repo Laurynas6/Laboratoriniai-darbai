@@ -17,7 +17,7 @@ section.paslaugos {
   margin-inline: auto;
 }
 
-button {
+button.mygtukas {
   width: 100px;
   height: 40px;
   background-color: lightgreen;
@@ -28,15 +28,20 @@ button {
   font-size: large;
 }
 
-button:hover{
+button.mygtukas:hover{
   background-color: blue;
 }
 
-a {
+a.nuoroda {
   font-size: larger;
 }
 
-a:hover {
+a.nuoroda:hover {
   font-family: 'Times New Roman', Times, serif;
   background-color: lightgray;
+}
+
+img{
+  margin-left: auto !important;
+  border-radius: 10px !important;
 }

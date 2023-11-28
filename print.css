@@ -2,7 +2,7 @@
     div.protfolio-wrap{
         margin-left: auto;
     }
-    button, a, i{
+    button, a, i, section.social_media, footer{
         display: none !important;
     }
 
@@ -11,7 +11,9 @@
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
     }
 
-    img.img-fluid{
+    img{
         align-content: center !important;
+        max-width: 50%;
+        height: auto;
     }
 }
