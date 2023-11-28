@@ -1,0 +1,42 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Times New Roman', Times, serif !important;
+}
+
+p {
+  font-family: 'Times New Roman', Times, serif !important;
+  font-weight: 300 !important;
+  font-size: large !important;
+}
+
+section.paslaugos {
+  background-color: lightgray;
+  border-radius: 10px;
+  border-color: darkgray;
+  border-style: dashed;
+  width: min(80%);
+  margin-inline: auto;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  background-color: lightgreen;
+  border-radius: 10px !important;
+  border-style: line;
+  border-color: darkgreen;
+  color: blue;
+  font-size: large;
+}
+
+button:hover{
+  background-color: blue;
+}
+
+a {
+  font-size: larger;
+}
+
+a:hover {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: lightgray;
+}

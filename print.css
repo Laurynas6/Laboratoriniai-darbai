@@ -1,0 +1,17 @@
+@media print {
+    div.protfolio-wrap{
+        margin-left: auto;
+    }
+    button, a, i{
+        display: none !important;
+    }
+
+    h1, b{
+        text-align: left !important;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    }
+
+    img.img-fluid{
+        align-content: center !important;
+    }
+}
