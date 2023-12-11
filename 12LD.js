@@ -11,6 +11,32 @@ function submitForm() {
     let q4 = parseInt(document.getElementById('q4').value);
     let q5 = parseInt(document.getElementById('q5').value);
 
+    // Validation checks
+  if (vardas === '' || pavarde === '' || email === '' || telefonas === '' || adresas === '') {
+    alert('Užpildykite visus laukelius.');
+    return;
+  }
+
+  if (!isValidEmail(email)) {
+    alert('Elektroninis paštas įvestas neteisingai.');
+    return;
+  }
+
+  if (!isValidPhoneNumber(telefonas)) {
+    alert('Telefono numeris įvestas neteisingai.');
+    return;
+  }
+
+  if (containsGap(vardas) || containsGap(pavarde)) {
+    alert('Vardas ir pavardė turi būti be tarpelių.');
+    return;
+  }
+
+  if (!isValidAddress(adresas)) {
+    alert('Adresas įvestas neteisingai');
+    return;
+  }
+
     // Create JavaScript object
     let surveyData = {
       Vardas: vardas,
@@ -40,4 +66,35 @@ function submitForm() {
 
       let rezultatas = document.getElementById('rezultatas');
       rezultatas.innerHTML='<p>'+surveyData.Vardas+' '+surveyData.Pavardė+' ('+surveyData.Email+'): '+average+'</p>';
+      
+      // Color change based on the average value
+      if (average >= 4) {
+        rezultatas.style.color = 'green';
+      } else if (average >= 2) {
+        rezultatas.style.color = 'orange';
+      } else {
+        rezultatas.style.color = 'red';
+      }
   }
+
+  // Function to validate email format
+function isValidEmail(email) {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+}
+
+// Function to validate phone number format
+function isValidPhoneNumber(phoneNumber) {
+  const phoneRegex = /^\d{9}$/;
+  return phoneRegex.test(phoneNumber);
+}
+
+// Function to check if there is a gap in the middle
+function containsGap(text) {
+  return text.includes(' ');
+}
+
+// Function to validate address format
+function isValidAddress(address) {
+  return /\d/.test(address);
+}
