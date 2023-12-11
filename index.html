@@ -1,4 +1,3 @@
-<!-- Laurynas Šeškus Ef-22/1 -->
 <!DOCTYPE html>
 
 <head>
@@ -16,6 +15,7 @@
   <link href="9LD.css" rel="stylesheet" media="screen">
   <link href="print.css" rel="stylesheet" media="print">
   <link href="10LD.css" rel="stylesheet">
+  <link href="12LD.css" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="unnamed.jpg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -73,15 +73,13 @@
   <main id="main">
     
     <section id="social_media" class="social_media">
-      <h1>Socialiniai tinklai:</h1>
+      <div class="section-title">
+        <h2>Socialiniai tinklai:</h2>
+      </div>
       <div>
         <a href="https://www.facebook.com/?locale=lt_LT" class="fa fa-facebook"></a>
         <a href="https://twitter.com/home" class="fa fa-twitter"></a>
       </div>
-    </section>
-
-    <section>
-
     </section>
 
     <!-- ======= About Section ======= -->
@@ -143,6 +141,52 @@
 
     <a href="javascript:if(window.print)window.print()">Spausdinti</a>
 
+    <section id="forum" class="forum">
+      <div class="section-title">
+        <h2>Forumas:</h2>
+      </div>
+      <form id="surveyForm">
+        <label for="vardas">Vardas:</label><br>
+        <input type="text" id="vardas" required><br>
+        
+        <label for="pavarde">Pavardė:</label><br>
+        <input type="text" id="pavarde" required><br>
+    
+        <label for="email">Elektroninis paštas:</label><br>
+        <input type="email" id="email" required><br>
+    
+        <label for="telefonas">Telefono numeris:</label><br>
+        <input type="tel" id="telefonas" required><br>
+    
+        <label for="adresas">Adresas:</label><br>
+        <input type="text" id="adresas" required><br>
+    
+        <label for="q1">Klausimas 1:</label><br>
+        <input type="number" id="q1" required><br>
+    
+        <label for="q2">Klausimas 2:</label><br>
+        <input type="number" id="q2" required><br>
+    
+        <label for="q3">Klausimas 3:</label><br>
+        <input type="number" id="q3" required><br>
+    
+        <label for="q4">Klausimas 4:</label><br>
+        <input type="number" id="q4" required><br>
+    
+        <label for="q5">Klausimas 5:</label><br>
+        <input type="number" id="q5" required><br>
+    
+        <button type="button" onclick="submitForm()">Submit</button>
+      </form>
+
+      <script src="12LD.js"></script>
+
+      <div id="output"></div>
+
+      <div id="rezultatas"></div>
+    
+    </section>
+
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio section-bg">
       <div class="container">
@@ -183,7 +227,7 @@
     </div>
 
       <div id="svg">
-        <svg  widht="100" height="100" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+        <svg  width="100" height="100" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
           <rect width="10" height="10">
             <animate
               attributeName="rx"
@@ -241,10 +285,12 @@
 
       </div>
     </section><!-- End Portfolio Section -->
-    <section>
+    
+
+    <div>
       <button class="mygtukas"><b>Mygtukas</b></button><br>
       <a class="nuoroda" href="https://www.google.com" target="_blank">Nuoroda</a>
-    </section>
+    </div>
 
     <section id="paslaugos" class="paslaugos">
       <div class="container">
@@ -258,16 +304,15 @@
           </iframe>
           <p>Kitas vaizdo įrašas:</p>
           <video width="320" height="240" controls>
-            <source src="C:\Users\reksa\OneDrive\Desktop\Programavimas\HTML\8\videoplayback.ogg" type="video/ogg">
-            <source src="C:\Users\reksa\OneDrive\Desktop\Programavimas\HTML\8\videoplayback.mp4" type="video/mp4">
+            <source src="C:/Users/reksa/OneDrive/Desktop/Programavimas/HTML/8/videoplayback.ogg" type="video/ogg">
+            <source src="C:/Users/reksa/OneDrive/Desktop/Programavimas/HTML/8/videoplayback.mp4" type="video/mp4">
           </video>
           <p>Garsas:</p>
           <audio controls>
-            <source src="C:\Users\reksa\OneDrive\Desktop\Programavimas\HTML\8\Me at the zoo.ogg" type="audio/ogg">
-            <source src="C:\Users\reksa\OneDrive\Desktop\Programavimas\HTML\8\Me at the zoo.mp3" type="audio/mpeg">
+            <source src="C:/Users/reksa/OneDrive/Desktop/Programavimas/HTML/8/Me_at_the_zoo.ogg" type="audio/ogg">
+            <source src="C:/Users/reksa/OneDrive/Desktop/Programavimas/HTML/8/Me_at_the_zoo.mp3" type="audio/mpeg">
           </audio>
         </div>
-      </div>
     </section>
 
 
